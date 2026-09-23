@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Documentation (Kenyan Edition) 🇰🇪</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Documentation ya kwanza ya JavaScript kwa Kiswahili cha kawaida cha Kenya - Inareduce the mental loading na kufanya kuelewa much easier bila deep translation.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  
+  <!-- Modern Themeable Stylesheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  
+  <style>
+    :root {
+      --base-font-size: 16px;
+      --theme-color: #008751; /* Kenyan Green */
+      --sidebar-name-color: #008751;
+      --cover-background-color: #0f172a;
+      --cover-heading-color: #ffffff;
+      --cover-blockquote-color: #cbd5e1;
+      --code-inline-background: #f1f5f9;
+      --code-inline-color: #0284c7;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #0f172a;
+        color: #e2e8f0;
+      }
+      .sidebar {
+        background-color: #1e293b;
+      }
+      :root {
+        --code-inline-background: #1e293b;
+        --code-inline-color: #38bdf8;
+      }
+    }
+
+    .app-name-link {
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">Inapakia JavaScript Documentation... ⏳</div>
+
+  <script>
+    window.$docsify = {
+      name: 'JS Docs Kenya 🇰🇪',
+      repo: 'https://github.com/Eminek-marz/kenyan_Swahili-javascript-docs',
+      loadSidebar: true,
+      subMaxLevel: 3,
+      coverpage: true,
+      auto2top: true,
+      
+      // Search Plugin Config
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: 'Tafuta mada yoyote (e.g. loops, fetch, map)... 🔍',
+        noData: 'Hakuna matokeo yaliyopatikana! ❌',
+        depth: 4
+      },
+
+      // Copy Code Button
+      copyCode: {
+        buttonText: 'Copy Code 📋',
+        errorText: 'Imefeli',
+        successText: 'Imenakiliwa! ✅'
+      },
+
+      // Pagination (Previous & Next Lesson)
+      pagination: {
+        previousText: '⬅️ Somo Lililopita',
+        nextText: 'Somo Linalofuata ➡️',
+        crossChapter: true,
+        crossChapterText: true
+      }
+    };
+  </script>
+
+  <!-- Docsify Core & Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  
+  <!-- Syntax Highlighting for JavaScript, HTML, CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+</body>
+</html>
