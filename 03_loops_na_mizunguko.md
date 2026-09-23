@@ -1,4 +1,4 @@
-# Topic 3: Loops & Iteration kwa JavaScript
+# Module 03: Loops & Iteration
 
 Karibu lesson three! Baada ya kuona logic na venye computer inaexecute decision kwa topic two, sasa ni time ya kuangalia **loops**.
 
@@ -8,7 +8,7 @@ Loop simply inatell computer: *"Endelea kuexecute hii block ya code tena na tena
 
 ---
 
-## 1. Main Types za Loops Utakutana Nazo 🔄
+## 1. Main Types of Loops 🔄
 
 Kwa JavaScript, kuna aina nne kuu za loops utakazotumia kila siku:
 1. **`for` loop** (The Classic — inatumika sana unapojua the number of times ya looping session itatake).
@@ -94,7 +94,7 @@ do {
 
 ---
 
-## 5. The Modern `for...of` Loop (Clean & Stress-Free) ✨
+## 5. The Modern `for...of` Loop ✨
 
 Ukiwa na list ya vitu (array) kama majina ya wasanii au bei za bidhaa, kuandika ile `for (let i = 0; i < array.length; i++)` ya zamani inachosha.
 
@@ -120,7 +120,7 @@ Hakuna haja ya ku-manage index `i`, comp inakushikia kila item mkononi moja kwa 
 
 ---
 
-## 6. Controlling Loops: `break` na `continue` 🛑⏩
+## 6. Controlling Loops: `break` and `continue` 🛑⏩
 
 Kuna time ukiwa katikati ya loop unataka kubadilisha tabia ya loop ghafla:
 
@@ -152,7 +152,7 @@ for (let ghorofa = 1; ghorofa <= 5; ghorofa++) {
 
 ---
 
-## 7. Common Pitfalls kwa Loops ⚠️
+## 7. Common Pitfalls with Loops ⚠️
 
 > [!WARNING] **1. The Off-by-One Error**
 > Kuweka `<` badala ya `<=` au opposite yake. Kama unataka loop mara 5 kuanzia 0:
@@ -164,7 +164,7 @@ for (let ghorofa = 1; ghorofa <= 5; ghorofa++) {
 
 ---
 
-## 8. Quick Practice 🎯
+## 8. Practice Exercises 🎯
 
 Fungua dev console yako (`F12`), piga hizi mazoezi:
 
