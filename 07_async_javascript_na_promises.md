@@ -1,4 +1,4 @@
-# Topic 7: Asynchronous JavaScript & Promises
+# Module 07: Asynchronous JavaScript & Promises
 
 Karibu lesson seven! Hapa ndipo tunapoingia kwenye mojawapo ya topics zenye nguvu zaidi lakini zinazowasumbua developers wengi: **Asynchronous JavaScript** (mara nyingi inaitwa **Async JS**).
 
@@ -6,7 +6,7 @@ Ukielewa hii topic vizuri, kutengeneza apps zinazowasiliana na backend, database
 
 ---
 
-## 1. Synchronous vs Asynchronous ni Nini Hasa? ⏳
+## 1. Synchronous vs Asynchronous Execution ⏳
 
 Kitu cha kwanza unachofaa kujua: **JavaScript ni single-threaded language**. 
 
@@ -29,7 +29,7 @@ Ile kazi nzito ikikamilika kule background, inatuletea majibu.
 
 ---
 
-## 2. Mfano Rahisi: `setTimeout` ⏰
+## 2. Simple Async Example: `setTimeout` ⏰
 
 Njia rahisi zaidi ya kuona Async kwa vitendo ni kutumia function ya `setTimeout` (inayohesabu muda kabla ya kuexecute code):
 
@@ -54,7 +54,7 @@ console.log("3. Ninaendelea kuongea na marafiki zangu bila kukungoja... 🗣️"
 
 ---
 
-## 3. Shida ya Zamani: "Callback Hell" 🌀
+## 3. The Callback Hell Problem 🌀
 
 Zamani sana (kabla ya 2015), developers walikuwa wanatumia callbacks kushughulikia kazi za async. Kama una kazi 4 zinazofuatana (e.g., login user ➡️ pata profile ➡️ pata marafiki zake ➡️ tuma ujumbe), code ilikuwa inakaa hivi:
 
@@ -74,7 +74,7 @@ Code kama hii ni ngumu kusoma, ngumu ku-debug, na ikitupa error ni kilio!
 
 ---
 
-## 4. The Savior: Promises 🤝
+## 4. Handling Async with Promises 🤝
 
 Ili kuokoa developers kutoka kwa Callback Hell, JavaScript ilituletea **Promises**.
 
@@ -113,7 +113,7 @@ tumaMpesaPromise(1500)
 
 ---
 
-## 5. The Modern Superhero: `async` / `await` 🚀
+## 5. Modern Async/Await Syntax 🚀
 
 Ingawa Promises zilikuwa nzuri kuliko Callbacks, kuandika `.then().then().catch()` mara nyingi bado ilikuwa inachosha.
 
@@ -141,7 +141,7 @@ lipaBili();
 
 ---
 
-## 6. Error Handling kwa `try...catch` 🛡️
+## 6. Error Handling with `try...catch` 🛡️
 
 Wakati unapotumia `async/await`, hautumii tena ile `.catch()`. Badala yake, unatumia mfumo wa kawaida wa **`try...catch`**:
 
@@ -162,7 +162,7 @@ fanyaMuamalaSalama();
 
 ---
 
-## 7. Common Pitfalls kwa Async JS ⚠️
+## 7. Common Pitfalls with Async JavaScript ⚠️
 
 > [!WARNING] **1. Kusahau neno `await`**
 > Unajua comp itafanya nini ukisahau kuweka `await` mbele ya function inayorudisha Promise?
@@ -177,7 +177,7 @@ fanyaMuamalaSalama();
 
 ---
 
-## 8. Quick Practice 🎯
+## 8. Practice Exercises 🎯
 
 Fungua console yako (`F12`), jaribu hii challenge:
 
