@@ -7,6 +7,7 @@
   <meta name="description" content="JavaScript Documentation - Kenyan Edition">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -76,15 +77,13 @@
       gap: 8px;
       align-items: center;
     }
-    .js-badge {
-      background-color: #f7df1e;
-      color: #000000;
-      font-weight: 800;
-      font-size: 11px;
-      padding: 2px 6px;
+    .js-official-logo {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
       border-radius: 3px;
       display: inline-block;
-      line-height: 1.2;
+      flex-shrink: 0;
     }
     .theme-tag {
       background-color: #2b2d30;
@@ -341,7 +340,11 @@
   <!-- Python Docs Style Top Navigation Header -->
   <header class="py-topbar">
     <div class="py-breadcrumbs">
-      <span class="js-badge">JS</span>
+      <svg class="js-official-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 630" width="20" height="20" aria-label="Original JavaScript Logo">
+        <rect width="630" height="630" fill="#f7df1e" rx="40" />
+        <path d="m 165.65,526.47375 48.2125,-29.1775 C 223.16375,513.7875 231.625,527.74 251.92,527.74 c 19.45375,0 31.71875,-7.60975 31.71875,-37.21 l 0,-201.3 59.20375,0 0,202.1375 c 0,61.32 -35.94375,89.23125 -88.385,89.23125 -47.36125,0 -74.8525,-24.52875 -88.8075,-54.13" fill="#000000" />
+        <path d="m 375,520.13 48.20625,-27.91125 c 12.69,20.72375 29.1825,35.9475 58.36125,35.9475 24.53125,0 40.17375,-12.26475 40.17375,-29.18125 0,-20.29875 -16.06875,-27.48875 -43.135,-39.32625 l -14.7975,-6.3475 c -42.715,-18.18125 -71.05,-41.0175 -71.05,-89.2275 0,-44.40375 33.83125,-78.2375 86.695,-78.2375 37.6375,0 64.7025,13.11125 84.15375,47.36625 l -46.09625,29.60125 c -10.15,-18.1825 -21.1425,-25.37125 -38.0575,-25.37125 -17.33875,0 -28.335,10.995 -28.335,25.37125 0,17.7625 10.99625,24.9525 36.3675,35.94875 l 14.8,6.3425 c 50.325,21.56875 78.66,43.5575 78.66,93.03375 0,53.2875 -41.86625,82.465 -98.11,82.465 -54.97625,0 -90.5,-26.2175 -107.83625,-60.47375" fill="#000000" />
+      </svg>
       <span style="font-weight: bold; color: #fff;">JavaScript</span> »
       <span>Kenyan Edition</span> »
       <a href="#/">Documentation</a>
