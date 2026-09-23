@@ -1,39 +1,55 @@
-# JavaScript Documentation (Kenyan Swahili Edition) 🇰🇪
-> **Mwongozo wa JavaScript kwa Kiswahili cha Kawaida cha Kenya — Bila "Deep Translation".**
+# JavaScript Documentation (Kenyan Edition) 🇰🇪
 
-Hii ni documentation ya kwanza ya JavaScript iliyoandikwa mahsusi kwa ajili ya developers, wanafunzi wa coding, na tech enthusiasts nchini Kenya na Afrika Mashariki. Badala ya Kiswahili kigumu chenye kinatranslate every single word to Kiswahili, inaelezea the concepts entailing JavaScript just like the way we talk—I believe this inareduce the mental loading na kufanya kuelewa much easier.
+> **JavaScript documentation iliyoandikwa kwa lugha ya kawaida tunayoongea Kenya — bila kizungu kigumu cha kiakademia wala Kiswahili kigumu cha kamusi kinachochosha akili.**
 
----
+Kujifunza programming haifai kuwa headache. Mara nyingi, documentation rasmi huwa na Kizungu kigumu sana cha kiakademia, na ukijaribu kusoma tafsiri za Kiswahili za kamusi zinazojaribu kutafsiri kila neno la code, inachosha akili (*complex Swahili is draining*).
 
-## 📌 Kanuni Kuu ya Huu Mradi (The Golden Rule)
-
-> **"Code terms zinabaki kwa Kiingereza, logic na maelezo yanaelezwa kwa Kiswahili chepesi cha maongezi."**
-
-Hapa **hatufanyi "deep translation"** au Kiswahili kigumu cha kamusi:
-* ❌ Hatutafsiri `variable` kuwa *"kigezo"* — tunasema tu **`variable`**.
-* ❌ Hatutafsiri `function` kuwa *"kazi / dhima"* — tunasema tu **`function`**.
-* ❌ Hatutafsiri `array` kuwa *"safu"* — tunasema tu **`array`**.
-* ❌ Hatutafsiri `loop` kuwa *"kitanzi"* — tunasema tu **`loop`**.
-* ✅ Tunaeleza concept jinsi developers wa Kenya wanavyoongea kwenye tech meetups, ofisini, na campus hackathons:
-  > *"Hapa tunadeclare `variable` kwa kutumia `const` juu value yake haitachange mbele kwa code..."*
+Huu mradi uliundwa kurahisisha mambo: **Tunaeleza JavaScript vile tunavyoongea kawaida tukiwa kwa ground, ofisini, au kwenye campus hackathons.** 
+* **Module titles na code terms zote zinabaki kwa Kiingereza standard** (`const`, `let`, `function`, `array`, `Promise`, `async/await`) ili ukiandika code kwa VS Code usipate mkanganyiko.
+* **Explanations zinaelezwa kwa mix ya kawaida ya Kiswahili na Kiingereza**, simple na straight to the point bila stress ya lugha.
+* **Mifano ya ground**: M-Pesa transactions, matatu fare, KPLC tokens, na e-commerce cart.
 
 ---
 
-## 📚 Muundo wa Kozi (Course Modules)
+## 📌 The Golden Rule (Kanuni Kuu)
 
-| Namba | Module | Faili | Maelezo |
+> **"All titles and code keywords remain standard in English; explanations are broken down in our natural mix of conversational Swahili and English."**
+
+* ❌ **Hatufanyi deep translation ya maneno ya code:**
+  * Hatutafsiri `variable` kuwa *"kigezo"* ➔ Tunasema **`variable`**
+  * Hatutafsiri `function` kuwa *"dhima / kazi"* ➔ Tunasema **`function`**
+  * Hatutafsiri `array` kuwa *"safu"* ➔ Tunasema **`array`**
+  * Hatutafsiri `loop` kuwa *"kitanzi"* ➔ Tunasema **`loop`**
+  * Hatutafsiri `Promise` kuwa *"ahadi"* ➔ Tunasema **`Promise`**
+* ✅ **Vile tunaeleza logic:**
+  > *"Hapa tunadeclare `variable` kwa kutumia `const` juu value yake haifai kubadilika mbele kwenye code..."*
+
+---
+
+## 💡 Real Kenyan Examples (Mifano ya Ground)
+Mifano yote kwenye haya masomo inatumia vitu tunazozijua na kuzitumia kila siku:
+* 📱 **M-Pesa**: Kuangalia account balance, transaction fees, na kutuma pesa.
+* 🚌 **Matatu Fare**: Kupiga hesabu ya nauli wakati wa rush hour vs off-peak.
+* ⚡ **KPLC Tokens & Stima**: Ku-calculate power units kulingana na pesa unayolipa.
+* 🛒 **Local E-Commerce**: Kuongeza bidhaa kwa shopping cart na ku-calculate grand total.
+
+---
+
+## 📚 Course Modules
+
+| # | Module Title (In English) | File | Explanation (Mix of Swahili & English) |
 | :---: | :--- | :--- | :--- |
-| **01** | **Utangulizi & Variables** | [`01_utangulizi_na_variables.md`](./01_utangulizi_na_variables.md) | JavaScript ni nini, jinsi ya kuirun, `const` vs `let` vs `var`, na data types za msingi. |
-| **02** | **Operators & Logic** | [`02_operators_na_logic.md`](./02_operators_na_logic.md) | Arithmetic, comparison (`===` vs `==`), logical operators (`&&`, `\|\|`, `??`), na conditionals (`if/else`, `switch`). |
-| **03** | **Loops & Iteration** | [`03_loops_na_mizunguko.md`](./03_loops_na_mizunguko.md) | `for`, `while`, `for...of`, na `for...in`. |
-| **04** | **Functions** | [`04_functions_za_javascript.md`](./04_functions_za_javascript.md) | Function declarations, arrow functions `() => {}`, parameters, return values, na scope. |
-| **05** | **Arrays & Array Methods** | [`05_arrays_na_methods.md`](./05_arrays_na_methods.md) | Indexing, destructuring, na essential methods kama `.map()`, `.filter()`, `.find()`, na `.reduce()`. |
-| **06** | **Objects & JSON** | [`06_objects_na_json.md`](./06_objects_na_json.md) | Object key-value pairs, nested objects, object destructuring, na kufanya kazi na JSON API data. |
-| **07** | **Asynchronous JavaScript** | [`07_async_javascript_na_promises.md`](./07_async_javascript_na_promises.md) | Jinsi JS inavyofanya kazi (single-threaded), Callbacks, Promises, na `async/await`. |
-| **08** | **Fetch API & Consuming APIs** | [`08_fetch_api_na_network_requests.md`](./08_fetch_api_na_network_requests.md) | Kutuma GET/POST requests, kushika response, na error handling na `try...catch`. |
-| **09** | **DOM Manipulation & Events** | [`09_dom_manipulation_na_events.md`](./09_dom_manipulation_na_events.md) | `document.querySelector`, kubadilisha HTML/CSS kwa JS, na click/submit events. |
+| **01** | **Introduction to JavaScript & Variables** | [`01_utangulizi_na_variables.md`](./01_utangulizi_na_variables.md) | JavaScript ni nini, jinsi ya kuirun kwa browser/console, `const` vs `let` vs `var`, na basic data types. |
+| **02** | **Operators & Logic** | [`02_operators_na_logic.md`](./02_operators_na_logic.md) | Hesabu za kawaida, kulinganisha vitu (`===` vs `==`), logical operators (`&&`, `||`, `??`), na `if/else` conditions. |
+| **03** | **Loops & Iteration** | [`03_loops_na_mizunguko.md`](./03_loops_na_mizunguko.md) | Ku-loop bila stress kwa `for`, `while`, na modern `for...of` bila ku-freeze browser. |
+| **04** | **Functions** | [`04_functions_za_javascript.md`](./04_functions_za_javascript.md) | Function declarations, modern arrow functions `() => {}`, parameters, return values, na variable scope. |
+| **05** | **Arrays & Array Methods** | [`05_arrays_na_methods.md`](./05_arrays_na_methods.md) | Zero-based indexing, destructuring, na essential methods kama `.map()`, `.filter()`, `.find()`, na `.reduce()`. |
+| **06** | **Objects & JSON** | [`06_objects_na_json.md`](./06_objects_na_json.md) | Key-value pairs, nested objects, optional chaining (`?.`), destructuring, na ku-parse JSON API data. |
+| **07** | **Asynchronous JavaScript & Promises** | [`07_async_javascript_na_promises.md`](./07_async_javascript_na_promises.md) | Event Loop, Callbacks, Promises, na kuandika asynchronous code safi kwa kutumia `async/await`. |
+| **08** | **Fetch API & Network Requests** | [`08_fetch_api_na_network_requests.md`](./08_fetch_api_na_network_requests.md) | Ku-fetch data kutoka kwa server, kutuma GET/POST requests, na error handling kwa `try...catch`. |
+| **09** | **DOM Manipulation & Events** | [`09_dom_manipulation_na_events.md`](./09_dom_manipulation_na_events.md) | Ku-select elements kwa `document.querySelector`, kubadilisha HTML/CSS, na ku-handle click na submit events. |
 
 ---
 
-## 🚀 Jinsi ya Kuanza
-Anza na somo la kwanza hapa: **[`01_utangulizi_na_variables.md`](./01_utangulizi_na_variables.md)**.
+## 🚀 Get Started (Anza Hapa)
+Anza moja kwa moja na Module ya kwanza hapa: **[`01_utangulizi_na_variables.md`](./01_utangulizi_na_variables.md)**.
