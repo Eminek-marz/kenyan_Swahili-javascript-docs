@@ -14,3 +14,7 @@
   * [About This Project](ABOUT.md)
   * [Contributing Guidelines](CONTRIBUTING.md)
   * [License](LICENSE.md)
+
+* **This Page**
+  * [GitHub Repository](https://github.com/Eminek-marz/kenyan_Swahili-javascript-docs)
+  * [View Source Code](https://github.com/Eminek-marz/kenyan_Swahili-javascript-docs/tree/main)
