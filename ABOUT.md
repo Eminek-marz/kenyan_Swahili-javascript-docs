@@ -1,30 +1,30 @@
-# Kuhusu Mradi Huu (About This Project) 🇰🇪📖
+# About This Project 🇰🇪📖
 
-> *"Hii ni documentation ya kwanza ya JavaScript iliyoandikwa mahsusi kwa ajili ya developers, wanafunzi wa coding, na tech enthusiasts nchini Kenya na Afrika Mashariki. Badala ya kiswahili ngumu enye inatranslate every single word to kiswahili, inaelezea the concepts entailing JavaScript just like the way we talk—I believe this inareduce the mental loading na kufanya kuelewa much easier."*
-
----
-
-## 💡 The Problem (Changamoto Iliyokuwepo)
-
-Kujifunza programming kwa mara ya kwanza kunahitaji nguvu nyingi za kiakili (**cognitive / mental load**). Mwanafunzi anapaswa kuelewa logic, computational thinking, algorithms, na syntax zote kwa pamoja.
-
-Shida kubwa hutokea kwenye lugha:
-1. **Kiingereza kigumu cha documentation**: Nyaraka nyingi rasmi (kama za ECMAScript spec) zimeandikwa kwa lugha nzito ya kiakademia na maneno magumu ya kizungu yanayomfanya mwanzilishi ajione mjinga au akate tamaa.
-2. **"Deep Translation" ya Kiswahili Sanifu**: Majaribio machache yaliyopo yanajaribu kutafsiri kila neno kwa kamusi ya Kiswahili kigumu (kama *variable* kuwa *"kigezo"*, *function* kuwa *"dhima"*, au *array* kuwa *"safu"*). Hii inaleta mkanganyiko mkubwa zaidi kwa sababu hakuna developer au kampuni ya tech nchini Kenya inayoandika au kuongea kwa mtindo huo wakati wa coding au interviews!
+> *"Kujifunza coding huku unahangaika na Kiswahili kigumu cha kamusi kunachosha akili. Huu mradi unaeleza JavaScript vile tunavyoongea kawaida kwa ground: simple, practical, na bila headache."*
 
 ---
 
-## 🎯 The Solution (Suluhisho Letu)
+## 💡 The Problem
 
-Mradi huu unatatua changamoto hiyo kwa kuondoa hiyo mzigo wa kiakili (**reducing mental loading**):
+Kujifunza software engineering kwa mara ya kwanza kunahitaji nguvu nyingi za kiakili (*cognitive load*). Lazima uelewe computational logic, algorithms, data structures, na syntax zote kwa pamoja.
 
-* **Code terms zinabaki Kiingereza**: Maneno ya code kama `let`, `const`, `function`, `array`, `loop`, `promise`, `async/await`, na `scope` yanabaki standard ili mwanafunzi aweze kuandika code kwenye VS Code na kuelewa error messages bila shida.
-* **Logic inaelezwa kwa lugha ya mtaa**: Sababu za kwanini kitu kinafanyika zinaelezwa kwa Kiswahili chepesi cha kawaida cha maongezi ambacho mtu yeyote nchini Kenya anakielewa mara moja.
-* **Mifano ya kiuhalisia ya Kenya**: Mifano inatumia maisha yetu ya kila siku—kama vile kufanya miamala ya M-Pesa, kupiga hesabu ya fare ya matatu, shopping carts, na majina ya mitaa ya Nairobi.
+Lakini shida kubwa inatokea kwenye lugha:
+1. **Academic English**: Documentation rasmi nyingi zimeandikwa kwa Kizungu kizito cha kiakademia chenye kinafanya beginners wajione overwhelmed au wajihisi coding ni ngumu sana.
+2. **Stiff "Deep Translation" Swahili**: Majaribio machache ya kutafsiri programming kwa Kiswahili yanajaribu kutafsiri kila technical term na Kiswahili cha kamusi (kama kuita *variable* kuwa *"kigezo"*, *function* kuwa *"dhima"*, au *array* kuwa *"safu"*). **Hii complex Swahili inachosha akili bure (*it is completely draining*)** na haitumiki na developer yeyote ofisini, kwa meetups, au wakati wa interviews nchini Kenya.
 
 ---
 
-## 🌍 Vision & Future
-Lengo letu ni kufanya tech iwe wazi na inayofikika kwa kila kijana anayetaka kuingia kwenye ulimwengu wa software engineering bila vizuizi visivyo vya lazima.
+## 🎯 Our Solution
 
-Huu ni mradi wa Open-Source—mtu yeyote anakaribishwa kusoma, kutumia, na ku-contribute kupitia [CONTRIBUTING.md](./CONTRIBUTING.md).
+Huu mradi unaondoa hiyo friction yote:
+* **Standard Code Terms**: Maneno yote ya code kama `let`, `const`, `function`, `array`, `loop`, `Promise`, na `async/await` yanabaki standard kwa Kiingereza ili ukiandika code kwa VS Code usipate mkanganyiko wowote.
+* **Conversational Explanations**: Concepts zinaelezwa kwa lugha ya kawaida tunayoongea kila siku—rahisi, straight to the point, na inayoeleweka ndani ya sekunde chache.
+* **Real Kenyan Context**: Kila mfano unatumia vitu tunavyoishi navyo kwa ground—M-Pesa balance, transaction charges, fare za matatu, na stima tokens.
+
+---
+
+## 🌍 Our Vision
+
+Lengo letu ni kufanya tech iwe accessible kwa kila kijana anayetaka kujifunza software engineering nchini Kenya na East Africa bila vizuizi visivyo vya lazima vya lugha.
+
+Huu ni mradi wa wazi (*Open-Source*). Karibu usome, utumie, na u-contribute kupitia [CONTRIBUTING.md](./CONTRIBUTING.md).
