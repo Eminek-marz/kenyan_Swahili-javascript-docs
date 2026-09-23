@@ -1,4 +1,4 @@
-# Topic 5: Arrays & Array Methods kwa JavaScript
+# Module 05: Arrays & Array Methods
 
 Karibu lesson five! Kufikia sasa tumeelewa venye functions zinafanya kazi. Sasa ni time ya kuingia kwenye mojawapo(hapa nimekua Ken Walibora) ya data structures muhimu zaidi kwa maisha ya developer: **Arrays**.
 
@@ -36,7 +36,7 @@ console.log(mitaa[mitaa.length - 1]); // "Kibera"
 
 ---
 
-## 2. Basic Methods za Kuongeza na Kutoa Items 🧰
+## 2. Adding and Removing Elements (`push`, `pop`, `shift`, `unshift`) 🧰
 
 JavaScript inakuja na methods za ndani (built-in methods) za ku-manipulate array:
 
@@ -61,7 +61,7 @@ console.log(squad.includes("Kamau")); // false
 
 ---
 
-## 3. The Big 4 Modern Array Methods (Hizi ndio Backbone ya JS & React!) 🚀
+## 3. The Big 4 Modern Array Methods (`.map`, `.filter`, `.find`, `.reduce`) 🚀
 
 Hapa ndipo modern JavaScript inapoacha kutumia zile `for` loops za kizamani. Hizi methods nne (`.map`, `.filter`, `.find`, na `.reduce`) ndizo utakazotumia kila siku kazini:
 
@@ -126,7 +126,7 @@ console.log(`Total matumizi ya leo ni: Ksh ${totalExpenses}`);
 
 ---
 
-## 4. Modern Bonus: Destructuring & Spread Operator (`...`) ✨
+## 4. Array Destructuring & Spread Operator (`...`) ✨
 
 Modern JavaScript ilitupa shortcuts mbili safi sana:
 
@@ -157,7 +157,7 @@ console.log(squadKamili);
 
 ---
 
-## 5. Common Pitfalls kwa Arrays ⚠️
+## 5. Common Pitfalls with Arrays ⚠️
 
 > [!WARNING] **1. Ku-access Index Isiyokuwepo**
 > Kama array ina items 3, index zake ni `0, 1, 2`. Ukijaribu ku-access `array[3]`, JavaScript haitakupa error—itakupa **`undefined`** kimya kimya, na hii inaweza kuleta bugs mbele kwa code!
@@ -174,7 +174,7 @@ console.log(squadKamili);
 
 ---
 
-## 6. Quick Practice 🎯
+## 6. Practice Exercises 🎯
 
 Fungua console yako (`F12`), jaribu hizi challenges:
 
