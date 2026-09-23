@@ -11,20 +11,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Docsify Base Dark Theme Layout -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">
+  <!-- Prism Syntax Highlighting -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/prismjs@1/themes/prism-tomorrow.min.css">
+
   <style>
     :root {
-      --bg-main: #1f2022;
-      --bg-sidebar: #18191a;
-      --bg-topbar: #141415;
+      --bg-main: #222222;
+      --bg-sidebar: #2d2d2d;
+      --bg-topbar: #18191a;
       --text-main: #d6d9dc;
-      --text-heading: #f3f4f6;
+      --text-heading: #ffffff;
       --text-muted: #9ba1a6;
       --link-color: #63b3ed;
       --link-hover: #90cdf4;
-      --border-color: #2d3135;
-      --code-bg: #121314;
-      --code-inline-bg: #2b2d30;
-      --quote-bg: #25282c;
+      --border-color: #383a3d;
+      --code-bg: #161718;
+      --code-inline-bg: #2e3033;
+      --quote-bg: #272a2e;
       --quote-border: #4299e1;
     }
 
@@ -55,7 +60,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 0 20px;
-      z-index: 100;
+      z-index: 1000;
       font-size: 13px;
       color: var(--text-muted);
     }
@@ -71,17 +76,38 @@
       gap: 8px;
       align-items: center;
     }
+    .js-badge {
+      background-color: #f7df1e;
+      color: #000000;
+      font-weight: 800;
+      font-size: 11px;
+      padding: 2px 6px;
+      border-radius: 3px;
+      display: inline-block;
+      line-height: 1.2;
+    }
+    .theme-tag {
+      background-color: #2b2d30;
+      border: 1px solid #3e4247;
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-size: 12px;
+      color: #cbd5e0;
+    }
 
     /* Sidebar Styling (Exact Python Docs Table of Contents) */
     .sidebar {
+      position: fixed !important;
       top: 42px !important;
       bottom: 0 !important;
-      width: 280px !important;
+      left: 0 !important;
+      width: 290px !important;
       background-color: var(--bg-sidebar) !important;
       border-right: 1px solid var(--border-color) !important;
-      padding: 24px 18px 40px !important;
+      padding: 20px 18px 40px !important;
       overflow-y: auto !important;
       color: var(--text-muted) !important;
+      z-index: 100;
     }
     
     .sidebar-nav {
@@ -95,23 +121,24 @@
     .sidebar ul {
       list-style-type: square !important;
       padding-left: 18px !important;
-      margin: 8px 0 !important;
+      margin: 6px 0 !important;
     }
 
     .sidebar ul li {
-      margin: 8px 0 !important;
-      color: #718096;
+      margin: 6px 0 !important;
+      color: #8892b0 !important;
       font-size: 13.5px !important;
     }
 
     .sidebar ul li strong {
       color: #ffffff !important;
-      font-size: 15px !important;
+      font-size: 14px !important;
       display: block;
-      margin-top: 14px;
-      margin-bottom: 6px;
+      margin-top: 16px;
+      margin-bottom: 8px;
       font-weight: 700 !important;
       letter-spacing: -0.01em;
+      text-transform: none !important;
     }
 
     .sidebar ul li a {
@@ -133,14 +160,14 @@
 
     /* Search Input */
     .search {
-      margin-bottom: 18px !important;
+      margin-bottom: 16px !important;
       padding: 0 !important;
       border: none !important;
     }
     .search input {
       width: 100% !important;
-      background-color: #242628 !important;
-      border: 1px solid #363a3e !important;
+      background-color: #1e2022 !important;
+      border: 1px solid #3c4044 !important;
       border-radius: 4px !important;
       color: #e2e8f0 !important;
       padding: 7px 12px !important;
@@ -153,9 +180,11 @@
 
     /* Main Content */
     .content {
+      position: absolute !important;
       top: 42px !important;
-      left: 280px !important;
+      left: 290px !important;
       right: 0 !important;
+      bottom: 0 !important;
       padding: 40px 60px 80px !important;
       max-width: 980px !important;
       background-color: var(--bg-main) !important;
@@ -164,11 +193,12 @@
     .markdown-section {
       max-width: 100% !important;
       padding: 0 !important;
+      color: var(--text-main) !important;
     }
 
     /* Headings (Exact Python Tutorial Style) */
     .markdown-section h1 {
-      font-size: 30px !important;
+      font-size: 32px !important;
       font-weight: 700 !important;
       color: #ffffff !important;
       margin-top: 10px !important;
@@ -180,10 +210,10 @@
     .markdown-section h2 {
       font-size: 22px !important;
       font-weight: 600 !important;
-      color: #f7fafc !important;
+      color: #ffffff !important;
       margin-top: 40px !important;
       margin-bottom: 16px !important;
-      border-bottom: 1px solid #2d3135 !important;
+      border-bottom: 1px solid #34373b !important;
       padding-bottom: 8px !important;
     }
 
@@ -214,7 +244,7 @@
     :not(pre) > code {
       background-color: var(--code-inline-bg) !important;
       color: #edf2f7 !important;
-      border: 1px solid #3a3e42 !important;
+      border: 1px solid #444a50 !important;
       border-radius: 4px !important;
       padding: 2px 6px !important;
       font-family: 'Fira Code', Consolas, monospace !important;
@@ -234,7 +264,6 @@
 
     .markdown-section pre code {
       background-color: transparent !important;
-      color: #e2e8f0 !important;
       font-family: 'Fira Code', Consolas, monospace !important;
       font-size: 14px !important;
       line-height: 1.6 !important;
@@ -261,14 +290,14 @@
       border-collapse: collapse !important;
       width: 100% !important;
       margin: 24px 0 !important;
-      background-color: #171819 !important;
+      background-color: #1a1b1c !important;
       border: 1px solid var(--border-color) !important;
       border-radius: 6px !important;
       overflow: hidden;
     }
 
     .markdown-section th {
-      background-color: #232527 !important;
+      background-color: #272a2e !important;
       color: #ffffff !important;
       font-weight: 600 !important;
       border: 1px solid var(--border-color) !important;
@@ -283,7 +312,7 @@
     }
 
     .markdown-section tr:nth-child(even) td {
-      background-color: #1c1d1f !important;
+      background-color: #202224 !important;
     }
 
     /* Copy Button */
@@ -312,11 +341,13 @@
   <!-- Python Docs Style Top Navigation Header -->
   <header class="py-topbar">
     <div class="py-breadcrumbs">
-      <span style="font-weight: bold; color: #fff;">JS Docs</span> »
+      <span class="js-badge">JS</span>
+      <span style="font-weight: bold; color: #fff;">JavaScript</span> »
       <span>Kenyan Edition</span> »
       <a href="#/">Documentation</a>
     </div>
-    <div style="display: flex; gap: 14px;">
+    <div style="display: flex; gap: 14px; align-items: center;">
+      <span class="theme-tag">Theme: Dark</span>
       <a href="https://github.com/Eminek-marz/kenyan_Swahili-javascript-docs" target="_blank">GitHub</a>
       <a href="#/ABOUT">About</a>
       <a href="#/CONTRIBUTING">Contributing</a>
@@ -330,8 +361,8 @@
       name: 'JS Docs Kenya',
       repo: '',
       loadSidebar: true,
-      subMaxLevel: 2,
-      coverpage: false, // Opens directly to docs like docs.python.org!
+      subMaxLevel: 3,
+      coverpage: false, // Opens directly to documentation like docs.python.org
       auto2top: true,
       
       search: {
