@@ -4,121 +4,356 @@
   <meta charset="UTF-8">
   <title>JavaScript Documentation (Kenyan Edition)</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="JavaScript documentation with practical conversational explanations and Kenyan real-world context.">
+  <meta name="description" content="JavaScript Documentation - Kenyan Edition">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   
-  <!-- Clean, Beautiful Official Docsify Theme -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --theme-color: #059669; /* Emerald Green */
+      --bg-main: #1f2022;
+      --bg-sidebar: #18191a;
+      --bg-topbar: #141415;
+      --text-main: #d6d9dc;
+      --text-heading: #f3f4f6;
+      --text-muted: #9ba1a6;
+      --link-color: #63b3ed;
+      --link-hover: #90cdf4;
+      --border-color: #2d3135;
+      --code-bg: #121314;
+      --code-inline-bg: #2b2d30;
+      --quote-bg: #25282c;
+      --quote-border: #4299e1;
     }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-main) !important;
+      color: var(--text-main) !important;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+      font-size: 15px;
+      line-height: 1.7;
     }
-    .app-name-link {
-      font-weight: 700;
-      font-size: 1.15rem;
-      color: #059669 !important;
+
+    /* Top Python-docs style navigation bar */
+    .py-topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 42px;
+      background-color: var(--bg-topbar);
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      z-index: 100;
+      font-size: 13px;
+      color: var(--text-muted);
     }
+    .py-topbar a {
+      color: var(--link-color);
+      text-decoration: none;
+    }
+    .py-topbar a:hover {
+      text-decoration: underline;
+    }
+    .py-breadcrumbs {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    /* Sidebar Styling (Exact Python Docs Table of Contents) */
     .sidebar {
-      background-color: #ffffff;
-      border-right: 1px solid #e2e8f0;
+      top: 42px !important;
+      bottom: 0 !important;
+      width: 280px !important;
+      background-color: var(--bg-sidebar) !important;
+      border-right: 1px solid var(--border-color) !important;
+      padding: 24px 18px 40px !important;
+      overflow-y: auto !important;
+      color: var(--text-muted) !important;
     }
+    
+    .sidebar-nav {
+      padding-left: 0 !important;
+    }
+
+    .sidebar > h1, .app-name {
+      display: none !important;
+    }
+
+    .sidebar ul {
+      list-style-type: square !important;
+      padding-left: 18px !important;
+      margin: 8px 0 !important;
+    }
+
+    .sidebar ul li {
+      margin: 8px 0 !important;
+      color: #718096;
+      font-size: 13.5px !important;
+    }
+
+    .sidebar ul li strong {
+      color: #ffffff !important;
+      font-size: 15px !important;
+      display: block;
+      margin-top: 14px;
+      margin-bottom: 6px;
+      font-weight: 700 !important;
+      letter-spacing: -0.01em;
+    }
+
     .sidebar ul li a {
-      font-size: 14px;
-      color: #475569;
+      color: #cbd5e0 !important;
+      text-decoration: none !important;
+      transition: color 0.15s ease;
+      font-size: 13.5px !important;
     }
+
     .sidebar ul li a:hover {
-      color: #059669;
+      color: var(--link-hover) !important;
+      text-decoration: underline !important;
     }
+
     .sidebar ul li.active > a {
-      color: #059669 !important;
-      font-weight: 600;
+      color: #ffffff !important;
+      font-weight: 600 !important;
     }
-    /* Clean, legible blockquotes */
-    blockquote {
-      border-left: 4px solid #059669 !important;
-      color: #1e293b !important;
-      background: #f8fafc !important;
-      padding: 12px 16px !important;
-      margin: 1.5em 0 !important;
-      border-radius: 0 6px 6px 0;
+
+    /* Search Input */
+    .search {
+      margin-bottom: 18px !important;
+      padding: 0 !important;
+      border: none !important;
     }
-    blockquote p {
-      margin: 0 !important;
-      color: #334155 !important;
-    }
-    /* Clean tables */
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      margin: 1.5em 0;
-    }
-    th, td {
-      border: 1px solid #e2e8f0;
-      padding: 10px 14px;
-      font-size: 14px;
-    }
-    th {
-      background-color: #f1f5f9;
-      font-weight: 600;
-      color: #0f172a;
-    }
-    /* Clean inline code */
-    :not(pre) > code {
-      background: #f1f5f9 !important;
-      color: #0284c7 !important;
-      padding: 3px 6px !important;
+    .search input {
+      width: 100% !important;
+      background-color: #242628 !important;
+      border: 1px solid #363a3e !important;
       border-radius: 4px !important;
-      font-size: 0.9em !important;
+      color: #e2e8f0 !important;
+      padding: 7px 12px !important;
+      font-size: 13px !important;
+      outline: none !important;
+    }
+    .search input:focus {
+      border-color: #4299e1 !important;
+    }
+
+    /* Main Content */
+    .content {
+      top: 42px !important;
+      left: 280px !important;
+      right: 0 !important;
+      padding: 40px 60px 80px !important;
+      max-width: 980px !important;
+      background-color: var(--bg-main) !important;
+    }
+
+    .markdown-section {
+      max-width: 100% !important;
+      padding: 0 !important;
+    }
+
+    /* Headings (Exact Python Tutorial Style) */
+    .markdown-section h1 {
+      font-size: 30px !important;
+      font-weight: 700 !important;
+      color: #ffffff !important;
+      margin-top: 10px !important;
+      margin-bottom: 24px !important;
+      border-bottom: none !important;
+      letter-spacing: -0.02em;
+    }
+
+    .markdown-section h2 {
+      font-size: 22px !important;
+      font-weight: 600 !important;
+      color: #f7fafc !important;
+      margin-top: 40px !important;
+      margin-bottom: 16px !important;
+      border-bottom: 1px solid #2d3135 !important;
+      padding-bottom: 8px !important;
+    }
+
+    .markdown-section h3 {
+      font-size: 17px !important;
+      font-weight: 600 !important;
+      color: #edf2f7 !important;
+      margin-top: 26px !important;
+      margin-bottom: 12px !important;
+    }
+
+    .markdown-section p, .markdown-section li {
+      color: #d1d5db !important;
+      font-size: 15px !important;
+      line-height: 1.75 !important;
+    }
+
+    .markdown-section a {
+      color: var(--link-color) !important;
+      text-decoration: none !important;
+    }
+    .markdown-section a:hover {
+      color: var(--link-hover) !important;
+      text-decoration: underline !important;
+    }
+
+    /* Inline Code */
+    :not(pre) > code {
+      background-color: var(--code-inline-bg) !important;
+      color: #edf2f7 !important;
+      border: 1px solid #3a3e42 !important;
+      border-radius: 4px !important;
+      padding: 2px 6px !important;
+      font-family: 'Fira Code', Consolas, monospace !important;
+      font-size: 13.5px !important;
+      font-weight: 500;
+    }
+
+    /* Code Blocks */
+    .markdown-section pre {
+      background-color: var(--code-bg) !important;
+      border: 1px solid var(--border-color) !important;
+      border-radius: 6px !important;
+      padding: 16px 20px !important;
+      margin: 20px 0 !important;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    .markdown-section pre code {
+      background-color: transparent !important;
+      color: #e2e8f0 !important;
+      font-family: 'Fira Code', Consolas, monospace !important;
+      font-size: 14px !important;
+      line-height: 1.6 !important;
+      padding: 0 !important;
+    }
+
+    /* Blockquotes */
+    .markdown-section blockquote {
+      background-color: var(--quote-bg) !important;
+      border-left: 4px solid var(--quote-border) !important;
+      border-radius: 0 6px 6px 0 !important;
+      color: #cbd5e1 !important;
+      margin: 24px 0 !important;
+      padding: 14px 20px !important;
+    }
+
+    .markdown-section blockquote p {
+      color: #e2e8f0 !important;
+      margin: 0 !important;
+    }
+
+    /* Tables */
+    .markdown-section table {
+      border-collapse: collapse !important;
+      width: 100% !important;
+      margin: 24px 0 !important;
+      background-color: #171819 !important;
+      border: 1px solid var(--border-color) !important;
+      border-radius: 6px !important;
+      overflow: hidden;
+    }
+
+    .markdown-section th {
+      background-color: #232527 !important;
+      color: #ffffff !important;
+      font-weight: 600 !important;
+      border: 1px solid var(--border-color) !important;
+      padding: 10px 16px !important;
+      text-align: left !important;
+    }
+
+    .markdown-section td {
+      border: 1px solid var(--border-color) !important;
+      color: #cbd5e0 !important;
+      padding: 9px 16px !important;
+    }
+
+    .markdown-section tr:nth-child(even) td {
+      background-color: #1c1d1f !important;
+    }
+
+    /* Copy Button */
+    .docsify-copy-code-button {
+      background-color: #2d3135 !important;
+      color: #cbd5e0 !important;
+      border-radius: 4px !important;
+      font-size: 12px !important;
+      padding: 4px 8px !important;
+    }
+
+    /* Mobile Responsive */
+    @media screen and (max-width: 768px) {
+      .py-topbar {
+        font-size: 11px;
+        padding: 0 10px;
+      }
+      .content {
+        left: 0 !important;
+        padding: 60px 20px 60px !important;
+      }
     }
   </style>
 </head>
 <body>
+  <!-- Python Docs Style Top Navigation Header -->
+  <header class="py-topbar">
+    <div class="py-breadcrumbs">
+      <span style="font-weight: bold; color: #fff;">JS Docs</span> »
+      <span>Kenyan Edition</span> »
+      <a href="#/">Documentation</a>
+    </div>
+    <div style="display: flex; gap: 14px;">
+      <a href="https://github.com/Eminek-marz/kenyan_Swahili-javascript-docs" target="_blank">GitHub</a>
+      <a href="#/ABOUT">About</a>
+      <a href="#/CONTRIBUTING">Contributing</a>
+    </div>
+  </header>
+
   <div id="app">Loading documentation...</div>
 
   <script>
     window.$docsify = {
       name: 'JS Docs Kenya',
-      repo: 'https://github.com/Eminek-marz/kenyan_Swahili-javascript-docs',
+      repo: '',
       loadSidebar: true,
       subMaxLevel: 2,
-      coverpage: true,
+      coverpage: false, // Opens directly to docs like docs.python.org!
       auto2top: true,
       
-      // Clean English Search UI
       search: {
         maxAge: 86400000,
         paths: 'auto',
-        placeholder: 'Search documentation (e.g. loops, fetch, map)...',
+        placeholder: 'Quick search...',
         noData: 'No results found',
         depth: 3
       },
 
-      // Copy Code Button
       copyCode: {
         buttonText: 'Copy',
         errorText: 'Error',
-        successText: 'Copied!'
-      },
-
-      // Clean Pagination
-      pagination: {
-        previousText: 'Previous',
-        nextText: 'Next',
-        crossChapter: true,
-        crossChapterText: true
+        successText: 'Copied'
       }
     };
   </script>
 
   <!-- Docsify Core & Plugins -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
   
   <!-- Syntax Highlighting -->
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
