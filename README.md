@@ -1,17 +1,17 @@
-# JavaScript Documentation (Kenyan Edition) 🇰🇪
+# JavaScript Documentation (Kenyan Edition)
 
-> **JavaScript documentation iliyoandikwa kwa lugha ya kawaida tunayoongea Kenya — bila kizungu kigumu cha kiakademia wala Kiswahili kigumu cha kamusi kinachochosha akili.**
+> JavaScript documentation iliyoandikwa kwa lugha ya kawaida tunayoongea — bila kizungu kigumu cha kiakademia wala Kiswahili kigumu cha kamusi kinachochosha akili.
 
-Kujifunza programming haifai kuwa headache. Mara nyingi, documentation rasmi huwa na Kizungu kigumu sana cha kiakademia, na ukijaribu kusoma tafsiri za Kiswahili za kamusi zinazojaribu kutafsiri kila neno la code, inachosha akili (*complex Swahili is draining*).
+Kujifunza programming haifai kuwa headache. Mara nyingi, documentation rasmi huwa na Kizungu kigumu sana, na ukijaribu kusoma tafsiri za Kiswahili za kamusi zinazojaribu kutafsiri kila neno la code, inachosha akili.
 
 Huu mradi uliundwa kurahisisha mambo: **Tunaeleza JavaScript vile tunavyoongea kawaida tukiwa kwa ground, ofisini, au kwenye campus hackathons.** 
-* **Module titles na code terms zote zinabaki kwa Kiingereza standard** (`const`, `let`, `function`, `array`, `Promise`, `async/await`) ili ukiandika code kwa VS Code usipate mkanganyiko.
-* **Explanations zinaelezwa kwa mix ya kawaida ya Kiswahili na Kiingereza**, simple na straight to the point bila stress ya lugha.
-* **Mifano ya ground**: M-Pesa transactions, matatu fare, KPLC tokens, na e-commerce cart.
+* **Module titles na code terms zote ziko kwa English standard** (`const`, `let`, `function`, `array`, `Promise`, `async/await`) ili ukiandika code kwa VS Code usipate mkanganyiko wowote.
+* **Explanations zinaelezwa kwa natural mix ya Swahili na English**, simple na straight to the point.
+* **Mifano ya ground**: M-Pesa transactions, matatu fare, KPLC tokens, na shopping cart.
 
 ---
 
-## 📌 The Golden Rule (Kanuni Kuu)
+## The Golden Rule
 
 > **"All titles and code keywords remain standard in English; explanations are broken down in our natural mix of conversational Swahili and English."**
 
@@ -26,18 +26,18 @@ Huu mradi uliundwa kurahisisha mambo: **Tunaeleza JavaScript vile tunavyoongea k
 
 ---
 
-## 💡 Real Kenyan Examples (Mifano ya Ground)
+## Real-World Examples
 Mifano yote kwenye haya masomo inatumia vitu tunazozijua na kuzitumia kila siku:
 * 📱 **M-Pesa**: Kuangalia account balance, transaction fees, na kutuma pesa.
 * 🚌 **Matatu Fare**: Kupiga hesabu ya nauli wakati wa rush hour vs off-peak.
-* ⚡ **KPLC Tokens & Stima**: Ku-calculate power units kulingana na pesa unayolipa.
-* 🛒 **Local E-Commerce**: Kuongeza bidhaa kwa shopping cart na ku-calculate grand total.
+* ⚡ **KPLC Tokens**: Ku-calculate power units kulingana na pesa unayolipa.
+* 🛒 **E-Commerce Cart**: Kuongeza bidhaa kwa shopping cart na ku-calculate grand total.
 
 ---
 
-## 📚 Course Modules
+## Course Modules
 
-| # | Module Title (In English) | File | Explanation (Mix of Swahili & English) |
+| # | Module | File | Description |
 | :---: | :--- | :--- | :--- |
 | **01** | **Introduction to JavaScript & Variables** | [`01_utangulizi_na_variables.md`](./01_utangulizi_na_variables.md) | JavaScript ni nini, jinsi ya kuirun kwa browser/console, `const` vs `let` vs `var`, na basic data types. |
 | **02** | **Operators & Logic** | [`02_operators_na_logic.md`](./02_operators_na_logic.md) | Hesabu za kawaida, kulinganisha vitu (`===` vs `==`), logical operators (`&&`, `||`, `??`), na `if/else` conditions. |
@@ -51,5 +51,5 @@ Mifano yote kwenye haya masomo inatumia vitu tunazozijua na kuzitumia kila siku:
 
 ---
 
-## 🚀 Get Started (Anza Hapa)
+## Get Started
 Anza moja kwa moja na Module ya kwanza hapa: **[`01_utangulizi_na_variables.md`](./01_utangulizi_na_variables.md)**.
