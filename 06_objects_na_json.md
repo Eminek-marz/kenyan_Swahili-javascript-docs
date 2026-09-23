@@ -1,4 +1,4 @@
-# Topic 6: Objects & JSON kwa JavaScript
+# Module 06: Objects & JSON
 
 Karibu lesson six! Kwenye lesson five tuliona venye arrays zinashika list ya vitu. Lakini fikiria ukitaka kueleza kitu kimoja kwa undani zaidi—kwa mfano, kueleza taarifa kamili za **User** mmoja (jina lake, nambari ya simu, email, balance ya akaunti, na kama amelipa registration).
 
@@ -57,7 +57,7 @@ console.log(gari["plate number"]); // "KDA 123X" (Hapa dot notation haiwezi kufa
 
 ---
 
-## 2. Methods Ndani ya Objects (Functions zenye Uhai) ⚙️
+## 2. Methods Inside Objects ⚙️
 
 Wakati function inapowekwa kama value ndani ya object, inaitwa **method**. Inatumika kupea hiyo object uwezo wa kufanya vitendo:
 
@@ -85,7 +85,7 @@ mpesaAccount.tumaPesa(1000);
 
 ---
 
-## 3. Nested Objects & Modern Optional Chaining (`?.`) 🛡️
+## 3. Nested Objects & Optional Chaining (`?.`) 🛡️
 
 Ndani ya object, unaweza kuweka object nyingine (nested object):
 
@@ -166,7 +166,7 @@ console.log(simuDiscounter);
 
 ---
 
-## 5. JSON ni Nini Hasa? (JavaScript Object Notation) 🌐
+## 5. What is JSON? (JavaScript Object Notation) 🌐
 
 Unajua wakati app yako inapotaka kuongea na server (backend API au database), huwezi kutuma JavaScript object moja kwa moja kwa waya za internet. Inabidi igeuzwe kuwa **text format** ya kawaida inayoeleweka na kila language (iwe Python, Java, au PHP).
 
@@ -198,7 +198,7 @@ console.log(liveData.balance); // 12500 (Sasa unaweza kufanya hesabu nayo!)
 
 ---
 
-## 6. Common Pitfalls kwa Objects ⚠️
+## 6. Common Pitfalls with Objects ⚠️
 
 > [!WARNING] **1. Kulinganisha Objects kwa `===`**
 > Unajua comp itafanya nini hapa?
@@ -211,7 +211,7 @@ console.log(liveData.balance); // 12500 (Sasa unaweza kufanya hesabu nayo!)
 
 ---
 
-## 7. Quick Practice 🎯
+## 7. Practice Exercises 🎯
 
 Fungua console yako (`F12`), fanya hizi exercises:
 
