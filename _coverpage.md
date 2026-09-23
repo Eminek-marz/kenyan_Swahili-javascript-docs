@@ -1,12 +1,12 @@
-# JavaScript Docs <small>Kenyan Edition 🇰🇪</small>
+# JavaScript Docs <small>Kenyan Edition</small>
 
-> JavaScript documentation iliyoandikwa kwa lugha ya kawaida tunayoongea — bila Kizungu kigumu cha kiakademia wala Kiswahili kigumu kinachochosha akili.
+> JavaScript explained the way we actually talk — without heavy academic jargon or draining translations.
 
-* All module titles & code terms remain standard English 💻
-* Explanations are a natural conversational mix of Swahili and English 🗣️
-* Zero headache — makes learning fast, practical, and intuitive 🧠
-* Real Kenyan examples: M-Pesa, Matatu fare, KPLC tokens 🇰🇪
-* 100% Free & Open-Source kwa jamii ya tech 🚀
+* All titles and code terms in standard English 💻
+* Explanations in natural conversational Kenyan style 🗣️
+* Zero headache — practical, relatable, and intuitive 🧠
+* Real-world examples: M-Pesa, matatu fare, KPLC tokens 🇰🇪
+* 100% Free and Open Source 🚀
 
 [GitHub Repo](https://github.com/Eminek-marz/kenyan_Swahili-javascript-docs)
-[Start Reading 🚀](README.md)
+[Get Started](README.md)
