@@ -37,19 +37,19 @@ Mifano yote kwenye haya masomo inatumia vitu tunazozijua na kuzitumia kila siku:
 
 ## Course Modules
 
-| # | Module | File | Description |
-| :---: | :--- | :--- | :--- |
-| **01** | **Introduction to JavaScript & Variables** | [`01_utangulizi_na_variables.md`](./01_utangulizi_na_variables.md) | JavaScript ni nini, jinsi ya kuirun kwa browser/console, `const` vs `let` vs `var`, na basic data types. |
-| **02** | **Operators & Logic** | [`02_operators_na_logic.md`](./02_operators_na_logic.md) | Hesabu za kawaida, kulinganisha vitu (`===` vs `==`), logical operators (`&&`, `||`, `??`), na `if/else` conditions. |
-| **03** | **Loops & Iteration** | [`03_loops_na_mizunguko.md`](./03_loops_na_mizunguko.md) | Ku-loop bila stress kwa `for`, `while`, na modern `for...of` bila ku-freeze browser. |
-| **04** | **Functions** | [`04_functions_za_javascript.md`](./04_functions_za_javascript.md) | Function declarations, modern arrow functions `() => {}`, parameters, return values, na variable scope. |
-| **05** | **Arrays & Array Methods** | [`05_arrays_na_methods.md`](./05_arrays_na_methods.md) | Zero-based indexing, destructuring, na essential methods kama `.map()`, `.filter()`, `.find()`, na `.reduce()`. |
-| **06** | **Objects & JSON** | [`06_objects_na_json.md`](./06_objects_na_json.md) | Key-value pairs, nested objects, optional chaining (`?.`), destructuring, na ku-parse JSON API data. |
-| **07** | **Asynchronous JavaScript & Promises** | [`07_async_javascript_na_promises.md`](./07_async_javascript_na_promises.md) | Event Loop, Callbacks, Promises, na kuandika asynchronous code safi kwa kutumia `async/await`. |
-| **08** | **Fetch API & Network Requests** | [`08_fetch_api_na_network_requests.md`](./08_fetch_api_na_network_requests.md) | Ku-fetch data kutoka kwa server, kutuma GET/POST requests, na error handling kwa `try...catch`. |
-| **09** | **DOM Manipulation & Events** | [`09_dom_manipulation_na_events.md`](./09_dom_manipulation_na_events.md) | Ku-select elements kwa `document.querySelector`, kubadilisha HTML/CSS, na ku-handle click na submit events. |
+| # | Module | What You'll Learn |
+| :---: | :--- | :--- |
+| **01** | [**01. Introduction & Variables**](01_introduction_and_variables.md) | JavaScript ni nini, jinsi ya kuirun kwa browser/console, `const` vs `let` vs `var`, na basic data types. |
+| **02** | [**02. Operators & Logic**](02_operators_and_logic.md) | Hesabu za kawaida, kulinganisha vitu (`===` vs `==`), logical operators (`&&`, `||`, `??`), na `if/else` conditions. |
+| **03** | [**03. Loops & Iteration**](03_loops_and_iteration.md) | Ku-loop bila stress kwa `for`, `while`, na modern `for...of` bila ku-freeze browser. |
+| **04** | [**04. Functions**](04_functions.md) | Function declarations, modern arrow functions `() => {}`, parameters, return values, na variable scope. |
+| **05** | [**05. Arrays & Array Methods**](05_arrays_and_methods.md) | Zero-based indexing, destructuring, na essential methods kama `.map()`, `.filter()`, `.find()`, na `.reduce()`. |
+| **06** | [**06. Objects & JSON**](06_objects_and_json.md) | Key-value pairs, nested objects, optional chaining (`?.`), destructuring, na ku-parse JSON API data. |
+| **07** | [**07. Asynchronous JavaScript & Promises**](07_async_and_promises.md) | Event Loop, Callbacks, Promises, na kuandika asynchronous code safi kwa kutumia `async/await`. |
+| **08** | [**08. Fetch API & Network Requests**](08_fetch_and_network_requests.md) | Ku-fetch data kutoka kwa server, kutuma GET/POST requests, na error handling kwa `try...catch`. |
+| **09** | [**09. DOM Manipulation & Events**](09_dom_manipulation_and_events.md) | Ku-select elements kwa `document.querySelector`, kubadilisha HTML/CSS, na ku-handle click na submit events. |
 
 ---
 
 ## Get Started
-Anza moja kwa moja na Module ya kwanza hapa: **[`01_utangulizi_na_variables.md`](./01_utangulizi_na_variables.md)**.
+Anza moja kwa moja na Module ya kwanza hapa: **[Module 01: Introduction & Variables](01_introduction_and_variables.md)**.
