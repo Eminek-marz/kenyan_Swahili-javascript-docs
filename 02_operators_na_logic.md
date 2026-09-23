@@ -1,10 +1,10 @@
-# Topic 2: Operators & Logic kwa JavaScript
+# Module 02: Operators & Logic
 
 Karibu lesson two! Baada ya kuona venye tunastore data kwa `variables` previously  in topic one, sasa ni time ya kujua venye tuna-manipulate hizo data, kufanya hesabu, na kupea computer capability ya kuexecute logic with accuracy.
 
 ---
 
-## 1. Operators ni Nini Hasa? ⚙️
+## 1. What are Operators? ⚙️
 
 Kwa kifupi sana, **operators** ni zile alama (symbols) maalum unazotumia kwa code kuambia computer ifanye hesabu fulani au ilinganishe vitu mbili.
 
@@ -15,7 +15,7 @@ Kuna three main group ya operators utakutana nazo day to day:
 
 ---
 
-## 2. Arithmetic Operators (Hesabu za Kawaida) ➕➖
+## 2. Arithmetic Operators ➕➖
 
 Hizi ni alama za hesabu zile za kawaida tulizoea shule, pamoja na zingine kadha za code:
 
@@ -48,7 +48,7 @@ console.log("10" - 5);  // 5 (Hapa JS inajifanya mjanja inaconvert string kuwa n
 
 ---
 
-## 3. Comparison Operators (Kulinganisha Vitu) 🔍
+## 3. Comparison Operators 🔍
 
 Hapa ndipo unapoangalia kama vitu vinalingana au other way round.Answer ya comparison operator kila mara hutoka ikiwa **Boolean** (`true` au `false`).
 
@@ -84,7 +84,7 @@ console.log(moneyAtHand >= ticketPrice); // true (Uko na pesa ya kutosha kuingia
 
 ---
 
-## 4. Logical Operators (conditional statements) 🧠
+## 4. Logical Operators 🧠
 
 Kuna time utataka ku-check conditions zaidi ya moja kwa wakati mmoja ndio code iexecute decision:
 
@@ -133,7 +133,7 @@ console.log(jinaLaKuonyesha); // Output: "Mgeni" (kwa sababu usernameGari haina 
 
 ---
 
-## 5. Conditionals: `if`, `else if`, na `else` 🚦
+## 5. Conditionals: `if`, `else if`, and `else` 🚦
 
 Sasa venye tumeelewa logic operators, tunazitumiaje ku-control flow ya program yetu? Tunatumia `if` statements:
 
@@ -158,7 +158,7 @@ Venye inavyofanya kazi:
 
 ---
 
-## 6. Ternary Operator (Njia Fupi ya `if/else`) ⚡
+## 6. Ternary Operator (Shorthand `if/else`) ⚡
 
 Kama una condition fupi sana yenye inataka tu kuamua kati ya vitu mbili, sio lazima uandike `if / else` ndefu ya five lines. Unatumia **Ternary Operator** (`? :`):
 
@@ -176,7 +176,7 @@ console.log(message); // Output: "Wewe ni mtu mzima"
 
 ---
 
-## 7. Falsy Values kwa JavaScript  ⚠️
+## 7. Falsy Values in JavaScript ⚠️
 
 Unajua kwa JS, sio lazima variable iwe neno `false` ndio ichukuliwe kama uongo kwa `if` condition. Kuna values 6 maalum zenye zikipigwa kwa `if`, JavaScript inaziona kama `false` mara moja:
 
@@ -201,7 +201,7 @@ if (emptyString) {
 
 ---
 
-## 8. (Quick Practice) 🎯
+## 8. Practice Exercises 🎯
 
 Fungua browser console yako (finya ile `F12`) alafu ujaribu hii challenge:
 
