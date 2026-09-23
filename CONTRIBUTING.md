@@ -1,54 +1,57 @@
-# Karibu Ku-contribute! (Contributing Guidelines) 🇰🇪🤝
+# Contributing Guidelines 🇰🇪🤝
 
-Karibu sana kwenye mradi wa **JavaScript Documentation (Kenyan Edition)**!
+Welcome to **JavaScript Documentation (Kenyan Edition)**!
 
-Huu ni mradi wa wazi (Open Source) ulioundwa ili kusaidia developers na wanafunzi wa tech kote Kenya na Afrika Mashariki kujifunza JavaScript kwa njia rahisi, ya vitendo, na inayoeleweka haraka bila maneno magumu ya kamusi.
-
----
-
-## 📌 Kanuni ya Dhahabu (The Golden Rule)
-
-Kabla ya kuongeza au kubadilisha kitu chochote, kumbuka sheria kuu ya huu mradi:
-
-> **"Code terms zinabaki kwa Kiingereza, logic na maelezo yanaelezwa kwa Kiswahili cha kawaida cha mtaani bila deep translation."**
-
-* ❌ Usibadilishe `variable` kuwa *"kigezo"*.
-* ❌ Usibadilishe `function` kuwa *"kazi"* au *"dhima"*.
-* ❌ Usibadilishe `array` kuwa *"safu"*.
-* ❌ Usibadilishe `loop` kuwa *"mzunguko"* wala *"kitanzi"*.
-* ❌ Usibadilishe `value` kuwa *"thamani"*.
-* ✅ Tumia lugha ya kawaida inayotumika kwenye tech meetups na ofisi za Nairobi (e.g., *"Hapa tunadeclare variable...", "Function inareturn value...", "Tuna-filter array ya miamala..."*).
+Huu ni mradi wa wazi (*Open Source*) ulioundwa kwa ajili ya developers, wanafunzi wa coding, na mtu yeyote anayetaka kujifunza JavaScript bila kupata headache ya lugha ngumu.
 
 ---
 
-## 🚀 Jinsi ya Ku-contribute
+## 🎯 Tone & Style Rules (Kanuni za Uandishi)
 
-1. **Fork hii repository** kwenye akaunti yako ya GitHub.
+Unapoongeza module mpya, mifano ya code, au kufungua PR, fuata kanuni hizi:
+
+1. **All Titles Must Be in English**:
+   * Module titles na section headings zote ziwe kwa Kiingereza (e.g. `## 1. What is an Array?`, `## 2. Using .filter() with M-Pesa`).
+2. **Explanations Must Be a Natural Mix of Swahili & English**:
+   * Tumia ile lugha ya kawaida tunayoongea kwenye tech meetups na ofisi za Nairobi.
+   * Usitumie Kiswahili kigumu cha kamusi (*complex Swahili is draining*). Ongea na msomaji kama vile unaelekeza msee kwa hackathon.
+3. **All Code Terms Must Stay in English**:
+   * Keywords zote za code (`const`, `let`, `function`, `array`, `object`, `return`, `Promise`, `async/await`, `DOM`, `Event`) zibaki standard kwa Kiingereza na zifungwe ndani ya backticks (e.g., `` `const` ``).
+4. **Use Relatable Kenyan Examples (Mifano ya Ground)**:
+   * Tumia mifano halisi ya Kenya: M-Pesa, matatu fare, KPLC tokens, shopping cart, etc.
+5. **Explain the "Why"**:
+   * Eleza kwa ufupi kwanini tunafanya hivyo ili msomaji aelewe logic badala ya ku-memorize tu code.
+
+---
+
+## 🛠 How to Contribute (Git Workflow)
+
+1. **Fork** repository hii kwenye akaunti yako ya GitHub.
 2. **Clone** repo kwenye mashine yako:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/kenyan-javascript-docs.git
+   git clone https://github.com/Eminek-marz/kenyan_Swahili-javascript-docs.git
    ```
-3. Tengeneza branch mpya ya feature yako:
+3. Unda branch mpya ya kazi yako:
    ```bash
-   git checkout -b feature/topic-mpya-au-fix
+   git checkout -b feature/add-mpesa-array-examples
    ```
-4. Fanya mabadiliko yako (ongeza mifano ya code, rekebisha typos, au ongeza changamoto mpya za mazoezi).
-5. **Commit** mabadiliko yako kwa ujumbe unaoeleweka:
+4. Fanya mabadiliko yako (ongeza mifano, rekebisha typos, au kurahisisha sentensi yoyote nzito).
+5. **Commit** mabadiliko yako:
    ```bash
-   git commit -m "docs: add M-Pesa examples to Topic 8 Fetch API"
+   git commit -m "docs: add relatable M-Pesa examples to arrays"
    ```
-6. **Push** kwenye GitHub:
+6. **Push** kwenye branch yako:
    ```bash
-   git push origin feature/topic-mpya-au-fix
+   git push origin feature/add-mpesa-array-examples
    ```
-7. Fungua **Pull Request (PR)** hapa ili tuweze kuireview na kuimerge!
+7. Fungua **Pull Request (PR)** hapa GitHub ili tuweze kuireview na kuimerge!
 
 ---
 
-## 💡 Njia za Kusaidia Mradi:
-* Kurekebisha code bugs au typos.
-* Kuongeza mifano halisi ya mazingira ya Kenya (M-Pesa, matatu fare, weather, e-commerce cart).
-* Kutafsiri lugha zingine (kama vile Python, React, au Git).
-* Kujaribu website na kutoa maoni kupitia GitHub Issues.
+## 💡 Ways to Help:
+* **Kurahisisha sentensi**: Ukiona sentensi yoyote inasikika nzito au inachosha, irahisishe kwa mix yetu ya kawaida.
+* **Mifano ya kiuhalisia**: Ongeza practical Kenyan scenarios kwenye modules zenye zinahitaji mifano zaidi.
+* **Mazoezi na Challenges**: Ongeza mini-challenges mwishoni mwa masomo ili wasomaji wajipime.
+* **Fixing Bugs**: Hakikisha mifano yote ya JavaScript ina-run bila errors.
 
-Asante kwa kuunga mkono tech community ya Kenya! 🇰🇪🔥
+Asante kwa kusaidia kukuza tech community yetu! 🇰🇪🔥
