@@ -1,4 +1,4 @@
-# Topic 4: Functions za JavaScript
+# Module 04: Functions
 
 Karibu lesson four! Kufikia sasa tumeshaona variables, logic za ku-make decisions, na loops za kurudia kazi. Sasa ni time ya kuangalia mojawapo ya tools zenye nguvu zaidi kwa programming: **Functions**.
 
@@ -8,7 +8,7 @@ Badala ya kuandika code hiyo hiyo yenye mistari ishirini kila mahali kwa project
 
 ---
 
-## 1. Function Declaration (The Classic Way) 🏛️
+## 1. Function Declarations (The Classic Way) 🏛️
 
 Hii ndiyo njia ya kwanza na ya kitamaduni ya kutengeneza function kwa JavaScript. Inatumia keyword ya `function`:
 
@@ -37,7 +37,7 @@ console.log(`Total fare ya watu 4 ni: Ksh ${fareYaSquad}`);
 
 ---
 
-## 2. Parameters vs Arguments (Tofauti Yake ni Nini?) 🎯
+## 2. Parameters vs Arguments 🎯
 
 Mara nyingi utaskia developers wakitumia haya maneno mawili, na watu wengi huchanganyikiwa:
 
@@ -58,7 +58,7 @@ salimiaUser();        // Output: Niaje Kijana, karibu kwa platform! 👋 (Hapa i
 
 ---
 
-## 3. The `return` Statement (Usiconfuse na `console.log`) 🛑
+## 3. The `return` Statement 🛑
 
 Hii ndiyo part beginners wengi huchanganya:
 
@@ -113,7 +113,7 @@ console.log(ongezaKumi(50)); // Output: 60
 
 ---
 
-## 5. Scope kwa JavaScript (Global vs Block/Function Scope) 🌐🔒
+## 5. Variable Scope (Global vs Block/Function Scope) 🌐🔒
 
 **Scope** inamaanisha ni wapi variable inaweza kufikiwa au kuonekana kwa code yako.
 
@@ -149,7 +149,7 @@ Comp inakuzuia kwa sababu `secretToken` iko scoped ndani ya `loginUser` pekee. H
 
 ---
 
-## 6. Common Pitfalls kwa Functions ⚠️
+## 6. Common Pitfalls with Functions ⚠️
 
 > [!WARNING] **1. Kusahau mabano `()` wakati wa ku-call function**
 > ```javascript
@@ -165,7 +165,7 @@ Comp inakuzuia kwa sababu `secretToken` iko scoped ndani ya `loginUser` pekee. H
 
 ---
 
-## 7. Quick Practice 🎯
+## 7. Practice Exercises 🎯
 
 Finya ile `F12` kwa browser yako, fungua console, upige hizi challenges 3:
 
