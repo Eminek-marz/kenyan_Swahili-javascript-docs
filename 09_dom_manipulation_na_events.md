@@ -1,4 +1,4 @@
-# Topic 9: DOM Manipulation & Events kwa JavaScript
+# Module 09: DOM Manipulation & Events
 
 Hongera kwa kufika somo la tisa na la mwisho kabisa la kozi yetu! 🎉
 
@@ -8,7 +8,7 @@ Hapo ndipo **DOM Manipulation & Events** zinapoingia. Hapa ndipo JavaScript inap
 
 ---
 
-## 1. DOM ni Nini Hasa? (Document Object Model) 🌳
+## 1. What is the DOM? (Document Object Model) 🌳
 
 Unapofungua ukurasa wa website, browser inasoma ule msimbo wa HTML na kuugeuza kuwa muundo wa vitu (tree of objects) ndani ya kumbukumbu ya kompyuta. Huo muundo unaitwa **DOM**.
 
@@ -20,7 +20,7 @@ Kupitia kitu maalum kinachoitwa **`document`**, JavaScript inapata mamlaka kamil
 
 ---
 
-## 2. Selecting Elements (Kuchagua Vitu Kwenye Ukurasa) 🎯
+## 2. Selecting DOM Elements 🎯
 
 Kabla ya kubadilisha kitu, lazima kwanza ukichague. Modern JavaScript inatumia methods mbili kuu zenye nguvu ambazo zinatumia CSS selectors zile zile ulizoea:
 
@@ -48,7 +48,7 @@ console.log(`Kuna kadi ${allCards.length} kwenye ukurasa!`);
 
 ---
 
-## 3. Modifying Elements (Kubadilisha Maandishi na Muonekano) 🎨
+## 3. Modifying Elements & Styles 🎨
 
 Ukishashika element mkononi mwako, unaweza kuifanyia mambo kadhaa:
 
@@ -76,7 +76,7 @@ banner.classList.toggle("dark-mode"); // Kama ipo inaitoa, kama haipo inaiweka!
 
 ---
 
-## 4. Handling Events (Kusikiliza Vitendo vya User) ⚡
+## 4. Handling User Events (Click, Submit, Input) ⚡
 
 **Event** ni kitu chochote kinachofanyika kwenye ukurasa:
 * User ku-click button (`click`).
@@ -107,7 +107,7 @@ inputName.addEventListener("input", (e) => {
 
 ---
 
-## 5. Mfano Kamili wa Pamoja: Mini Interactive App 💡
+## 5. Full Practical Example: Mini Interactive App 💡
 
 Huu hapa ni mfano kamili unaochanganya HTML na JavaScript:
 
@@ -143,7 +143,7 @@ Huu hapa ni mfano kamili unaochanganya HTML na JavaScript:
 
 ---
 
-## 6. Common Pitfalls kwa DOM ⚠️
+## 6. Common Pitfalls with the DOM ⚠️
 
 > [!WARNING] **1. Ku-run JavaScript kabla ya HTML ku-load**
 > Ukijaribu kuita `document.querySelector("#btn")` lakini tag ya `<script>` iko juu kabisa kwenye `<head>` ya HTML yako, JavaScript itarudisha **`null`** kwa sababu browser bado haijafika huko chini kutengeneza hiyo button!
@@ -160,7 +160,7 @@ Huu hapa ni mfano kamili unaochanganya HTML na JavaScript:
 
 ---
 
-## 7. Quick Practice 🎯
+## 7. Practice Exercises 🎯
 
 1. Tengeneza button kwenye ukurasa wa HTML yenye id `#mode-toggle`.
 2. Kwa kutumia JavaScript, weka `click` event listener.
@@ -169,7 +169,7 @@ Huu hapa ni mfano kamili unaochanganya HTML na JavaScript:
 
 ---
 
-## 🏁 Hitimisho la Kozi (Course Completion) 🎓
+## 🏁 Course Completion 🎓
 
 Hongera sana! Ukiwa umekamilisha masomo yote 9 kuanzia `Variables` hadi `DOM Manipulation`, sasa una msingi imara sana wa **Modern JavaScript** ulioandikwa kwa lugha halisi inayoeleweka bila usumbufu wa "deep translation".
 
