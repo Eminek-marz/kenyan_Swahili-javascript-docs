@@ -1,5 +1,5 @@
-* [🏠 Home (Nyumbani)](README.md)
-* [ℹ️ About This Project](ABOUT.md)
+* [Home](README.md)
+* [About This Project](ABOUT.md)
 
 * **JavaScript Modules**
   * [01. Introduction & Variables](01_utangulizi_na_variables.md)
@@ -13,5 +13,5 @@
   * [09. DOM Manipulation & Events](09_dom_manipulation_na_events.md)
 
 * **Community & Open Source**
-  * [🤝 Contributing Guidelines](CONTRIBUTING.md)
-  * [📜 MIT License](LICENSE.md)
+  * [Contributing Guidelines](CONTRIBUTING.md)
+  * [MIT License](LICENSE.md)
