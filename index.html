@@ -2,78 +2,112 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>JavaScript Documentation (Kenyan Edition) 🇰🇪</title>
+  <title>JavaScript Documentation (Kenyan Edition)</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Documentation ya kwanza ya JavaScript kwa Kiswahili cha kawaida cha Kenya - Inareduce the mental loading na kufanya kuelewa much easier bila deep translation.">
+  <meta name="description" content="JavaScript documentation with practical conversational explanations and Kenyan real-world context.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   
-  <!-- Modern Themeable Stylesheet -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <!-- Clean, Beautiful Official Docsify Theme -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   
   <style>
     :root {
-      --base-font-size: 16px;
-      --theme-color: #008751; /* Kenyan Green */
-      --sidebar-name-color: #008751;
-      --cover-background-color: #0f172a;
-      --cover-heading-color: #ffffff;
-      --cover-blockquote-color: #cbd5e1;
-      --code-inline-background: #f1f5f9;
-      --code-inline-color: #0284c7;
+      --theme-color: #059669; /* Emerald Green */
     }
-    
-    @media (prefers-color-scheme: dark) {
-      body {
-        background-color: #0f172a;
-        color: #e2e8f0;
-      }
-      .sidebar {
-        background-color: #1e293b;
-      }
-      :root {
-        --code-inline-background: #1e293b;
-        --code-inline-color: #38bdf8;
-      }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     }
-
     .app-name-link {
       font-weight: 700;
-      font-size: 1.1rem;
+      font-size: 1.15rem;
+      color: #059669 !important;
+    }
+    .sidebar {
+      background-color: #ffffff;
+      border-right: 1px solid #e2e8f0;
+    }
+    .sidebar ul li a {
+      font-size: 14px;
+      color: #475569;
+    }
+    .sidebar ul li a:hover {
+      color: #059669;
+    }
+    .sidebar ul li.active > a {
+      color: #059669 !important;
+      font-weight: 600;
+    }
+    /* Clean, legible blockquotes */
+    blockquote {
+      border-left: 4px solid #059669 !important;
+      color: #1e293b !important;
+      background: #f8fafc !important;
+      padding: 12px 16px !important;
+      margin: 1.5em 0 !important;
+      border-radius: 0 6px 6px 0;
+    }
+    blockquote p {
+      margin: 0 !important;
+      color: #334155 !important;
+    }
+    /* Clean tables */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1.5em 0;
+    }
+    th, td {
+      border: 1px solid #e2e8f0;
+      padding: 10px 14px;
+      font-size: 14px;
+    }
+    th {
+      background-color: #f1f5f9;
+      font-weight: 600;
+      color: #0f172a;
+    }
+    /* Clean inline code */
+    :not(pre) > code {
+      background: #f1f5f9 !important;
+      color: #0284c7 !important;
+      padding: 3px 6px !important;
+      border-radius: 4px !important;
+      font-size: 0.9em !important;
     }
   </style>
 </head>
 <body>
-  <div id="app">Inapakia JavaScript Documentation... ⏳</div>
+  <div id="app">Loading documentation...</div>
 
   <script>
     window.$docsify = {
-      name: 'JS Docs Kenya 🇰🇪',
+      name: 'JS Docs Kenya',
       repo: 'https://github.com/Eminek-marz/kenyan_Swahili-javascript-docs',
       loadSidebar: true,
-      subMaxLevel: 3,
+      subMaxLevel: 2,
       coverpage: true,
       auto2top: true,
       
-      // Search Plugin Config
+      // Clean English Search UI
       search: {
         maxAge: 86400000,
         paths: 'auto',
-        placeholder: 'Tafuta mada yoyote (e.g. loops, fetch, map)... 🔍',
-        noData: 'Hakuna matokeo yaliyopatikana! ❌',
-        depth: 4
+        placeholder: 'Search documentation (e.g. loops, fetch, map)...',
+        noData: 'No results found',
+        depth: 3
       },
 
       // Copy Code Button
       copyCode: {
-        buttonText: 'Copy Code 📋',
-        errorText: 'Imefeli',
-        successText: 'Imenakiliwa! ✅'
+        buttonText: 'Copy',
+        errorText: 'Error',
+        successText: 'Copied!'
       },
 
-      // Pagination (Previous & Next Lesson)
+      // Clean Pagination
       pagination: {
-        previousText: '⬅️ Somo Lililopita',
-        nextText: 'Somo Linalofuata ➡️',
+        previousText: 'Previous',
+        nextText: 'Next',
         crossChapter: true,
         crossChapterText: true
       }
@@ -81,14 +115,14 @@
   </script>
 
   <!-- Docsify Core & Plugins -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
   
-  <!-- Syntax Highlighting for JavaScript, HTML, CSS -->
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <!-- Syntax Highlighting -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
 </body>
 </html>
