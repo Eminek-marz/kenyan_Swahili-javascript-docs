@@ -1,10 +1,10 @@
-# Somo la 01: Utangulizi wa JavaScript & Variables
+# Module 01: Introduction to JavaScript & Variables
 
 Karibu lesson one! Hapa tutajifunza foundation ya JavaScript, venye code inavyo-run, na venye tunastore data kwa `variables`.
 
 ---
 
-## 1. JavaScript ni Nini Hasa? 🌐
+## 1. What is JavaScript? 🌐
 
 JavaScript (mara nyingi hufupishwa kama **JS**) ni programming language inayotumika ku-increase interactivity kwa websites. 
 
@@ -16,7 +16,7 @@ Mwaka ni 1995 na hii period JavaScript ilikuwa inatumika kwa browser kufanya vit
 
 ---
 
-## 2. Kuanza: "Hello World" ya Kwanza 🚀
+## 2. Getting Started: First "Hello World" 🚀
 
 Huna haja ya ku-install software yoyote nzito ili kuanza. Browser yako tayari ina JavaScript engine ndani yake:
 
@@ -34,7 +34,7 @@ console.log("Niaje Kenya! Hii ndio code yangu ya kwanza ya JavaScript.");
 
 ---
 
-## 3. Variable ni Nini? 📦
+## 3. What is a Variable? 📦
 
 Fikiria **variable** kama box enye imelabeliwa (label). Kama boxes zozote, variable inatumika ku-store data kwa memory ya kompyuta ili uweze kuitumia tena kwa kuita kwa code.
 
@@ -45,7 +45,7 @@ Kwa JavaScript, tunatumia maneno matatu ku-declare (hapa simply ni moment enye y
 
 ---
 
-## 4. `const` vs `let` vs `var` (Sheria ya Kisasa) ⚖️
+## 4. `const` vs `let` vs `var` (Modern Rules) ⚖️
 
 Hii ndiyo rule rahisi ya kufuata unapoandika modern JavaScript:
 
@@ -77,7 +77,7 @@ console.log("Current Score:", pointScored); // Output: 25 (Hii inakubalika kabis
 
 ---
 
-## 5. Primitive Types 🧱
+## 5. Primitive Data Types 🧱
 
 Kila value unayoiweka kwa variable ina (**data type**). JavaScript ina 7 primitive data types:
 
@@ -134,7 +134,7 @@ let gariLangu = null; // Sina gari kwa sasa, nitaweka value nikinunua
 
 ---
 
-## 6. Jinsi ya Kuangalia Type: `typeof` Operator 🔍
+## 6. Checking Types: `typeof` Operator 🔍
 
 Kama unataka kujua data type ya variable yoyote, tumia neno `typeof`:
 
@@ -178,7 +178,7 @@ Ili code yako iwe safi na inayosomeka kirahisi na developers wengine:
 
 ---
 
-## 9. Mazoezi ya Kufanya (Quick Practice) 🎯
+## 9. Practice Exercises 🎯
 
 Jaribu kuandika hizi kwenye browser console yako:
 
