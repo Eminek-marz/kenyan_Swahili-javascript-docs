@@ -1,4 +1,4 @@
-# Topic 8: Fetch API & Consuming Network Requests
+# Module 08: Fetch API & Network Requests
 
 Karibu lesson eight! Kwenye topic seven tuliona venye `async/await` inavyofanya kazi. Sasa ni time ya kutumia hiyo nguvu kuunganisha app yako na ulimwengu wa nje (backend servers, live databases, na third-party APIs kama za M-Pesa au weather services) kwa kutumia **Fetch API**.
 
@@ -6,7 +6,7 @@ Kupitia Fetch API, website yako inaweza kuomba data mpya kutoka kwenye server, a
 
 ---
 
-## 1. HTTP Methods za Msingi Unazofaa Kujua 🌐
+## 1. Core HTTP Request Methods 🌐
 
 Unapowasiliana na server yoyote mtandaoni kupitia API, unatumia lugha ya **HTTP**. Kuna vitendo vinne (methods) vikuu unavyoweza kufanya:
 
@@ -19,7 +19,7 @@ Unapowasiliana na server yoyote mtandaoni kupitia API, unatumia lugha ya **HTTP*
 
 ---
 
-## 2. Kufanya `GET` Request (Hatua 2 za Lazima) 📥
+## 2. Performing a GET Request 📥
 
 Wakati unapotumia `fetch()`, kuna hatua mbili za lazima lazima ambazo comp inafanya kabla haijakupa data kamili:
 
@@ -54,7 +54,7 @@ getUsers();
 
 ---
 
-## 3. HTTP Status Codes (Zinazoeleweka na Kila Msee) 🚦
+## 3. Understanding HTTP Status Codes 🚦
 
 Server inapokujibu, inakupa nambari ya siri inayoitwa **Status Code** kukuambia kama mambo yameenda poa au yameharibika:
 
@@ -79,7 +79,7 @@ const data = await response.json();
 
 ---
 
-## 4. Kufanya `POST` Request (Kutuma Data Mpya kwa Server) 📤
+## 4. Performing a POST Request 📤
 
 Unapotaka kutuma data mpya (kwa mfano ku-register account au kutuma order), unampa `fetch` parameter ya pili yenye options tatu muhimu:
 1. `method: "POST"`
@@ -115,7 +115,7 @@ createNewPost();
 
 ---
 
-## 5. Common Pitfalls kwa Fetch API ⚠️
+## 5. Common Pitfalls with Fetch API ⚠️
 
 > [!WARNING] **1. Kufikiri HTTP 404 au 500 inakimbilia kwa `catch` block**
 > Hili ndilo kosa namba moja la developers:
@@ -132,7 +132,7 @@ createNewPost();
 
 ---
 
-## 6. Quick Practice 🎯
+## 6. Practice Exercises 🎯
 
 Fungua console yako (`F12`), fanya hii challenge:
 
